@@ -1,0 +1,246 @@
+@import './thumbnails';
+
+$bg-color: #333;
+$bg-main: #ffd42a;
+$bg-ico:#666;
+
+
+.sidebar {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 75px;
+  max-width: 75px;
+  padding: 20px 7px 20px 7px;
+  background-color: $bg-main;
+
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: $bg-main;
+    background-color: $bg-color;
+    font-size: 3em;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .userIcon {
+    margin-top: 1em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    background-color: $bg-main;
+    font-size: 3em;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    > img {
+      vertical-align: middle;
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  .side-bar__options {
+    margin-top: 3em;
+    ul {
+      text-align: center;
+      li {
+        cursor: pointer;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        vertical-align: middle;
+        margin-bottom: 2em;
+
+        i {
+          color: $bg-ico;
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+$card-header__bg: #4d4d4d;
+$card-header__fg: #fff;
+$card-body__bg: #ef8175;
+$card-body__fg: #fff;
+$card-footer__bg: #ff644b;
+$card-footer__fg: #000;
+
+.default-content {
+  margin-left: 75px;
+  padding: 15px;
+}
+
+.idea-card {
+  width: 300px;
+  height: 250px;
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float: left;
+
+  .idea-card__header {
+    padding-left: 15px;
+    margin-top: 0; margin-bottom: 0;
+    line-height: 40px;
+    height: 40px;
+    background-color: $card-header__bg;
+    color: $card-header__fg;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .idea-card__body {
+    height: 100%;
+    padding: 55px 15px 55px 15px;
+    width: 100%;
+    line-height: 1em;
+    background-color: $card-body__bg;
+    overflow-wrap: break-word;
+  }
+
+  .idea-card__footer {
+    background-color: $card-footer__bg;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: $card-footer__fg;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    bottom: 0;
+
+    span {
+      margin-right: 1em;
+    }
+    .footer_left {
+      display: inline-block;
+      float: left;
+      line-height: 40px;
+
+      .author {
+        text-overflow: clip;
+        white-space: nowrap;
+
+        > .fa {
+          margin-right: 0.75em;
+        }
+      }
+    }
+    .footer_right {
+      display: inline-block;
+      float: right;
+      line-height: 40px;
+
+      .hard-actions {
+        display: inline-block;
+      }
+      .agree {
+        color: #ffcc00;
+        > .fa {
+          margin-left: 0.5em;
+        }
+      }
+      .badge {
+        background-color: #3e3e3e;
+        cursor: pointer;
+      }
+      .comments {
+        color: white;
+        > .fa {
+          margin-left: 0.5em;
+        }
+      }
+      .archive {
+        cursor: pointer;
+        color: white;
+      }
+      .delete {
+        cursor: pointer;
+        color: yellow;
+      }
+    }
+  }
+}
+
+.idea-keywords {
+  padding: 0;
+  margin: 0;
+
+  li {
+    cursor: pointer;
+    padding: 5px 7px 5px 7px;
+    background-color: #808080;
+    color: #f9f9f9;
+    font-size: 0.8em;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    .allowed-remove {
+      &:after {
+        content: 'x';
+        float: right;
+        font-size: 1em;
+        width: 1.1em;
+        height: 1.1em;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+
+.idea-view__modal {
+  .modal-dialog {
+    width: 1000px;
+  }
+}
+
+
+.idea-body__comments {
+  .comments {
+    margin-left: 15px;
+    list-style: none;
+    .author {
+      font-weight: bold;
+    }
+    .message {
+      font-size: 1.2em;
+    }
+
+    .time {
+      > i {
+        margin-right: 1em;
+      }
+    }
+    .reply {
+      float: right;
+    }
+  }
+}
+.message-editor {
+}
+
+.panel-keywords {
+}
+
+.topbar {
+margin-left: 100px;
+}

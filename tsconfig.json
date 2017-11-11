@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "lib": ["dom", "es7", "es6", "es2017.object", "es2017"]
+  },
+  "exclude": [
+    "node_modules",
+    "./src/**/__tests__",
+    "public",
+    "dist"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useTranspileModule": true
+  }
+}

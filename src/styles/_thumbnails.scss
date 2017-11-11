@@ -1,0 +1,10 @@
+.thumbnail {
+  overflow: hidden;
+  height: 350px;
+  max-height: 250px;
+  > img {
+    max-height: inherit;
+    height: 75%;
+  }
+  
+}
